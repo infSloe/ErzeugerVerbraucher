@@ -1,0 +1,23 @@
+#![Rainer und Monika]
+
+rainer:Actor
+konto:Konto
+monika:Actor
+
+rainer:konto.gibKontostand()
+konto:rainer.50
+
+
+monika:konto.gibKontostand()&
+konto:monika.50
+
+
+rainer:konto.abheben(30)&
+*1konto
+Der Kontostand ist nun 20
+*1
+monika:konto.abheben(30)&
+*2konto
+Der Kontostand ist nun -10!
+*2
+
